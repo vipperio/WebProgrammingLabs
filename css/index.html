@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoCabins</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="nav_wrapper">
+      <img src="./img/icon.png" alt="" class="icon">
+
+      <!-- Кнопка бургер -->
+      <button class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Навігація з id -->
+      <nav class="nav" id="nav">
+        <a href="" class="sections">Modellen</a>
+        <a href="" class="sections">Kopen</a>
+        <a href="" class="sections">Huren</a>
+        <a href="" class="sections">Nieuws</a>
+        <button class="contact">Contact</button>
+      </nav>
+    </div>
+
+    <div class="content_wrapper">
+      <div class="text_wrapper">
+        <p class="text_1">Sustainable tiny houses</p>
+        <p class="text_2">An ecological tiny house is constructed from as much sustainable natural materials as possible</p>
+      </div>
+
+      <div class="btn_wrapper">
+        <button class="play_btn"></button>
+        <button class="btn_text">Watch the movie</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="materials">
+      <div class="text_wrapper">
+        <h2 class="text_1">Durable materials</h2>
+        <p class="text_2">All EcoCabins have a high insulation value, are produced with sustainable and / or natural
+          materials where possible and have the "round corners" as a striking external characteristic, made possible by
+          the specific use of materials. The advantages of building with wood are many: wood is light, flexible,
+          insulates well and builds quickly and efficiently.</p>
+        <button class="btn">Read more</button>
+      </div>
+      <img src="./img/2.png" alt="" class="material_img">
+    </div>
+
+    <div class="innovative">
+      <div class="text_wrapper_1">
+        <h2 class="text_1">Innovative</h2>
+        <div class="text_wrapper_2">
+          <p class="text_2">Our goal is to continuously further develop and innovate the EcoCabins, so that the
+            EcoCabins are ultimately 100% sustainable and circular. A condition for this is that the EcoCabins remain
+            affordable. With the help of the sun, the wind and the best insulation you can enjoy.</p>
+          <p class="text_2">All EcoCabins have a high insulation value, are produced with sustainable and / or natural
+            materials where possible and have the 'round corners' as a striking external characteristic, made possible
+            by the specific use of materials. The advantages of building.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="features">
+      <img src="./img/3.png" alt="" class="features_img">
+      <div class="features_grid">
+        <div class="section">
+          <h3 class="text_1">Wood</h3>
+          <p class="text_2">De draagconstructies van<br> EcoCabins bestaan uit<br> Hout is duurzaam en.</p>
+        </div>
+        <div class="section">
+          <h3 class="text_1">Workmanship</h3>
+          <p class="text_2">De draagconstructies van<br> EcoCabins bestaan uit<br> Hout is duurzaam en.</p>
+        </div>
+        <div class="section">
+          <h3 class="text_1">Steel base</h3>
+          <p class="text_2">De draagconstructies van<br> EcoCabins bestaan uit<br> Hout is duurzaam en.</p>
+        </div>
+        <div class="section">
+          <h3 class="text_1">Glass wool </h3>
+          <p class="text_2">De draagconstructies van<br> EcoCabins bestaan uit<br> Hout is duurzaam en.</p>
+        </div>
+        <div class="section">
+          <h3 class="text_1">Triple glass</h3>
+          <p class="text_2">De draagconstructies van<br> EcoCabins bestaan uit<br> Hout is duurzaam en.</p>
+        </div>
+        <div class="section">
+          <h3 class="text_1">Infrared floor</h3>
+          <p class="text_2">De draagconstructies van<br> EcoCabins bestaan uit<br> Hout is duurzaam en.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer_wrapper">
+      <a href="#" class="footer_text">info@eco-cabins.com</a>
+      <img src="./img/icon.png" alt="" class="icon">
+      <div class="footer_text_wrapper">
+        <a href="#" class="footer_text">Cookies</a>
+        <a href="#" class="footer_text">Privacybeleid</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- burger -->
+  <script>
+    const burger = document.getElementById('burger');
+    const nav = document.getElementById('nav');
+
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      burger.classList.toggle('open');
+    });
+
+    // Закривати меню при кліку на посилання
+    const links = nav.querySelectorAll('a, button');
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('active');
+        burger.classList.remove('open');
+      });
+    });
+  </script>
+</body>
+
+</html>

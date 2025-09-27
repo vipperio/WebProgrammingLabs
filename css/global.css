@@ -1,0 +1,49 @@
+body {
+    font-family: "Merriweather", sans-serif;
+    color: #222F33
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 40px; 
+    }
+    
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: block;
+}
+
+p {
+    margin: 0;
+}
